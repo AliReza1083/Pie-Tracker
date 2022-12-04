@@ -24,3 +24,31 @@ h1 {
   font-family: "raleway", sans-serif;
   font-weight: 900;
 }
+
+#background__gradient::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to top right,
+    #165b33 0%,
+    #146b3a 5.72%,
+    #f8b229 61.78%,
+    #ea4630 86.68%,
+    #bb2528 100%
+  );
+  transform: scale(2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: rotateAnimation 5s infinite linear;
+}
+
+@keyframes rotateAnimation {
+  from {
+    transform: rotate(0deg) scale(10);
+  }
+  to {
+    transform: rotate(360deg) scale(4.5);
+  }
+}
