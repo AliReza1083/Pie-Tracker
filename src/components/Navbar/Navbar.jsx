@@ -25,7 +25,7 @@ const Navbar = () => {
             <BsFillSunFill />
           </div>
           <li>
-            <a href="#">Info</a>
+            <a href="#information">Info</a>
           </li>
           <li>
             <Link to="/counting">Start Eating</Link>

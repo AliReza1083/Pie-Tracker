@@ -11,6 +11,10 @@
   @apply bg-darkGreen;
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   @apply bg-background text-white dark:bg-white dark:text-black;
   font-family: "Roboto", sans-serif;

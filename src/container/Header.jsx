@@ -5,7 +5,7 @@ import CristmasLight from "../assets/cristmas_light.png";
 
 const Header = () => {
   return (
-    <div className="flex justify-center py-12 lg:py-[90px]">
+    <div className="flex justify-center py-12 lg:pt-[90px]">
       {/* Main Container */}
       <div className="relative w-full min2xl:max-w-[1500px] grid grid-cols-2 lg:grid-cols-1 items-center px-12 md:px-8 sm:px-4">
         <BackgroundGradient />
