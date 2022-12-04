@@ -4,8 +4,15 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-darkGreen;
+}
+
 body {
-  @apply bg-background text-white;
+  @apply bg-background text-white dark:bg-white dark:text-black;
   font-family: "Roboto", sans-serif;
 }
 
