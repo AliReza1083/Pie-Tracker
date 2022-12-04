@@ -1,0 +1,4 @@
+nav {
+  @apply w-full h-16 flex justify-between items-center px-12 md:px-8 sm:px-4;
+  box-shadow: 0 2px 24px rgba(0, 0, 0, 0.25);
+}
