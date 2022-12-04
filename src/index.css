@@ -8,3 +8,8 @@ body {
   @apply bg-background text-white;
   font-family: "Roboto", sans-serif;
 }
+
+h1 {
+  font-family: "raleway", sans-serif;
+  font-weight: 900;
+}
