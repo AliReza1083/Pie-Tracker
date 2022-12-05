@@ -3,7 +3,7 @@ import { AiFillTwitterCircle } from "react-icons/ai";
 
 const Footer = () => {
   return (
-    <div className="w-full bg-darkGreen flex flex-col items-center gap-2 py-4">
+    <div className="text-white w-full bg-darkGreen flex flex-col items-center gap-2 py-4">
       <div className="flex gap-4 text-3xl">
         <FaDiscord />
         <AiFillTwitterCircle />

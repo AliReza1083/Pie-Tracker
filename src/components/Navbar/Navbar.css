@@ -1,5 +1,5 @@
 nav {
-  @apply bg-background fixed top-0 left-0 z-50 w-full h-16 flex justify-between items-center px-12 md:px-8 sm:px-4;
+  @apply bg-background dark:bg-white fixed top-0 left-0 z-50 w-full h-16 flex justify-between items-center px-12 md:px-8 sm:px-4;
   box-shadow: 0 2px 24px rgba(0, 0, 0, 0.25);
 }
 

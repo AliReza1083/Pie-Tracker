@@ -14,7 +14,9 @@ const Comments = () => {
         {/* Information */}
         <div className="mt-2">
           <h2 className="text-lg leading-[.5]">User Name</h2>
-          <small className="text-white text-opacity-70">date</small>
+          <small className="text-white text-opacity-70 dark:text-black dark:text-opacity-70">
+            date
+          </small>
           <p className="mt-2 sm:text-sm">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text

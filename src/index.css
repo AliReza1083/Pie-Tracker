@@ -67,6 +67,7 @@ label {
   cursor: pointer;
 }
 label::before {
+  @apply border-2 border-white dark:border-darkGreen;
   box-sizing: border-box;
   content: " ";
   position: absolute;
@@ -75,7 +76,6 @@ label::before {
   display: block;
   width: 1.4em;
   height: 1.4em;
-  border: 2px solid white;
   border-radius: 0.25em;
   z-index: -1;
 }
@@ -85,14 +85,14 @@ input[type="radio"] + label::before {
 }
 /* Checked */
 input[type="radio"]:checked + label {
+  @apply text-[#146b3a] dark:text-white;
   padding-left: 1em;
-  color: #146b3a;
 }
 input[type="radio"]:checked + label::before {
+  @apply bg-white dark:bg-darkGreen;
   top: 0;
   width: 100%;
   height: 2em;
-  background: white;
 }
 /* Transition */
 label,

@@ -3,8 +3,10 @@ import { ReactComponent as CountingSVG } from "../assets/Counting.svg";
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 import { useState } from "react";
 
+import useLocalStorage from "../hooks/useLocalStorage";
+
 const Counting = () => {
-  const [counting, setCounting] = useState(1);
+  const [counting, setCounting] = useLocalStorage("counts", 1);
 
   return (
     <div className="flex justify-center">
@@ -15,13 +17,13 @@ const Counting = () => {
           <div className="flex items-center gap-44 md:gap-12 text-4xl mt-8">
             <button
               onClick={() => setCounting(counting - 1)}
-              className="bg-red-800 p-4 rounded-xl active:scale-90 duration-150"
+              className="text-white bg-red-800 p-4 rounded-xl active:scale-90 duration-150"
             >
               <AiOutlineMinus />
             </button>
             <button
               onClick={() => setCounting(counting + 1)}
-              className="bg-green-800 p-4 rounded-xl active:scale-90 duration-150"
+              className="text-white bg-green-800 p-4 rounded-xl active:scale-90 duration-150"
             >
               <AiOutlinePlus />
             </button>
