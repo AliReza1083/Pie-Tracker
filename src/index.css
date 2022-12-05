@@ -16,7 +16,7 @@
 }
 
 body {
-  @apply bg-background text-white dark:bg-white dark:text-black;
+  @apply bg-background text-white dark:bg-white dark:text-black duration-150;
   font-family: "Roboto", sans-serif;
 }
 
@@ -100,4 +100,12 @@ label::before {
   -webkit-transition: 0.25s all ease;
   -o-transition: 0.25s all ease;
   transition: 0.25s all ease;
+}
+
+#bg {
+  fill: #232524;
+}
+
+.dark #bg {
+  fill: transparent;
 }

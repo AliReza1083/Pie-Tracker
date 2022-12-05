@@ -11,7 +11,7 @@ const Header = () => {
         <BackgroundGradient />
         {/* item 1 */}
         <div className="flex flex-col items-start gap-4 md:gap-2 lg:items-center">
-          <h1 className="relative text-7xl lg:text-[5vw] sm:text-4xl text-lightGreen">
+          <h1 className="relative text-7xl lg:text-[5vw] sm:text-4xl text-lightGreen dark:text-darkGreen">
             PIE TRACKER
             <img
               className="absolute top-[-30px] left-1/2 -z-50 -translate-x-1/2 lg:hidden"
