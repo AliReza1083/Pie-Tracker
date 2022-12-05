@@ -8,16 +8,18 @@ import {
 
 import { Footer } from "../components";
 
+import { motion } from "framer-motion";
+
 const Home = () => {
   return (
-    <div>
+    <motion.div exit={{ opacity: 0 }}>
       <Header />
       <Information />
       <Banner />
       <AddComment />
       <Comments />
       <Footer />
-    </div>
+    </motion.div>
   );
 };
 
