@@ -15,6 +15,7 @@ const Home = () => {
       <Information />
       <Banner />
       <AddComment />
+      <Comments />
       <Footer />
     </div>
   );
