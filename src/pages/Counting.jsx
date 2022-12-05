@@ -23,7 +23,13 @@ const Counting = () => {
           <motion.h2
             exit={{ y: 100, opacity: 0 }}
             transition={{ duration: 0.5 }}
-            className="text-9xl"
+            className={`text-9xl ${
+              minusButton && plusButton == false
+                ? "text-red-600"
+                : minusButton == false && plusButton
+                ? "text-green-600"
+                : "text-white dark:text-black"
+            }`}
           >
             {counting}
           </motion.h2>
