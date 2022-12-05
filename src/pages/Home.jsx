@@ -1,4 +1,12 @@
-import { Header, Information, Banner } from "../container";
+import {
+  Header,
+  Information,
+  Banner,
+  AddComment,
+  Comments,
+} from "../container";
+
+import { Footer } from "../components";
 
 const Home = () => {
   return (
@@ -6,6 +14,8 @@ const Home = () => {
       <Header />
       <Information />
       <Banner />
+      <AddComment />
+      <Footer />
     </div>
   );
 };
