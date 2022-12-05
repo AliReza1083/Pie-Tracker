@@ -9,6 +9,9 @@ const Header = () => {
       {/* Main Container */}
       <div className="relative w-full min2xl:max-w-[1500px] grid grid-cols-2 lg:grid-cols-1 items-center px-12 md:px-8 sm:px-4">
         <BackgroundGradient />
+        <h1 className="text-[600px] absolute top-0 left-1/2 -translate-x-1/2 -z-50 opacity-[0.01] dark:opacity-[.1] leading-[.7] pointer-events-none xl:hidden">
+          {localStorage.counts}
+        </h1>
         {/* item 1 */}
         <div className="flex flex-col items-start gap-4 md:gap-2 lg:items-center">
           <h1 className="relative text-7xl lg:text-[5vw] sm:text-4xl text-lightGreen dark:text-darkGreen">
