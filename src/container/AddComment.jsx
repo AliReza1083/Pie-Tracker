@@ -1,6 +1,22 @@
+import { collection, addDoc, serverTimestamp } from "firebase/firestore";
+import { db } from "../utils/AddComment";
+
 const AddComment = () => {
+  const colRef = collection(db, "Approve");
+
   const submitForm = (e) => {
     e.preventDefault();
+
+    addDoc(colRef, {
+      name: e.target.name.value,
+      email: e.target.email.value,
+      man: e.target[2].checked,
+      woman: e.target[3].checked,
+      comment: e.target.comment.value,
+      createdAt: serverTimestamp(),
+    }).then(() => {
+      alert("Added");
+    });
   };
 
   return (
@@ -15,12 +31,14 @@ const AddComment = () => {
         <input
           className="bg-[#303030] dark:bg-[#f2f2f2] rounded-md outline-none border-2 border-transparent focus:border-darkGreen duration-100 px-4 py-2"
           type="text"
+          name="name"
           placeholder="name"
           required
         />
         <input
           className="bg-[#303030] dark:bg-[#f2f2f2] rounded-md outline-none border-2 border-transparent focus:border-darkGreen duration-100 px-4 py-2"
           type="email"
+          name="email"
           placeholder="email"
           required
         />
