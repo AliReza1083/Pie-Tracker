@@ -42,6 +42,7 @@ h1 {
   top: 0;
   left: 0;
   animation: rotateAnimation 5s infinite linear;
+  z-index: -1;
 }
 
 @keyframes rotateAnimation {

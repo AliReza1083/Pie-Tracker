@@ -21,20 +21,6 @@ const Information = () => {
           </p>
           <img className="w-full max-w-[413px] rounded-lg" src={Pie_1} alt="" />
         </div>
-
-        <div className="flex gap-12 mt-12 items-center px-12 md:px-0 lg:flex-col-reverse">
-          <img className="w-full max-w-[413px]" src={Pie_2} alt="" />
-          <p className="text-2xl lg:text-center md:text-base">
-            A pie is a baked dish which is usually made of a pastry dough casing
-            that contains a filling of various sweet or savoury ingredients.
-            Sweet pies may be filled with fruit (as in an apple pie), nuts
-            (pecan pie), brown sugar (sugar pie), sweetened vegetables (rhubarb
-            pie), or with thicker fillings based on eggs and dairy (as in
-            custard pie and cream pie). Savoury pies may be filled with meat (as
-            in a steak pie or a Jamaican patty), eggs and cheese (quiche) or a
-            mixture of meat and vegetables (pot pie).
-          </p>
-        </div>
       </div>
     </div>
   );
