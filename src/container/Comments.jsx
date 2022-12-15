@@ -2,7 +2,7 @@ import Man from "../assets/man_user.png";
 import Woman from "../assets/woman_user.png";
 
 import { db } from "../utils/AddComment";
-import { onSnapshot, collection } from "firebase/firestore";
+import { onSnapshot, collection, query, orderBy } from "firebase/firestore";
 import { useEffect, useState } from "react";
 
 import { convertTimestamp } from "./app";
@@ -10,9 +10,10 @@ import { convertTimestamp } from "./app";
 const Comments = () => {
   const [comments, setComments] = useState([]);
   const colRef = collection(db, "Comments");
+  const q = query(colRef, orderBy("createdAt"));
 
   useEffect(() => {
-    onSnapshot(colRef, (snapshot) => {
+    onSnapshot(q, (snapshot) => {
       setComments(
         snapshot.docs.map((comment) => ({
           ...comment.data(),
@@ -22,10 +23,11 @@ const Comments = () => {
     });
   }, []);
 
-  console.log(comments);
-
   return (
     <div className="flex flex-col justify-center items-center pb-12 px-4">
+      {comments.length != 0 && (
+        <h1 className="w-full min2xl:max-w-[1187px] text-3xl mb-8">Comments</h1>
+      )}
       <div className="w-full min2xl:max-w-[1187px] flex flex-col gap-8">
         {comments.map((comment) => {
           return (

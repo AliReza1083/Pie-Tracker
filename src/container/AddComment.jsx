@@ -1,7 +1,9 @@
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
+import { useState } from "react";
 import { db } from "../utils/AddComment";
 
 const AddComment = () => {
+  const [isShown, setIsShown] = useState(false);
   const colRef = collection(db, "Approve");
 
   const submitForm = (e) => {
@@ -14,9 +16,18 @@ const AddComment = () => {
       woman: e.target[3].checked,
       comment: e.target.comment.value,
       createdAt: serverTimestamp(),
-    }).then(() => {
-      alert("Added");
-    });
+    })
+      .then(() => {
+        e.target.name.value = "";
+        e.target.email.value = "";
+        e.target.comment.value = "";
+        setIsShown(true);
+      })
+      .then(() => {
+        setTimeout(() => {
+          setIsShown(false);
+        }, 5000);
+      });
   };
 
   return (
@@ -62,6 +73,13 @@ const AddComment = () => {
           Add
         </button>
       </form>
+      {isShown && (
+        <div className="fixed bottom-10 right-0 bg-green-600 px-4 py-2 rounded-l-xl sm:rounded-none animate-pulse">
+          <h2 className="text-white font-bold">
+            Your comment was sent successfully, It needs to be approved...
+          </h2>
+        </div>
+      )}
     </div>
   );
 };
