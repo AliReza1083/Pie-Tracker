@@ -28,3 +28,11 @@
 | [Figma](https://www.figma.com/file/J2lJrOoDrITpKEQBZS7tXk/Pie-Tracker?node-id=0%3A1&t=YQ5ja9REIBKmYCrM-1) | Before Coding the website, I designed the website and then coded it | <div align="center">![image](https://user-images.githubusercontent.com/99729607/208216570-f486ab02-d078-487e-8596-de1a5a985ad8.png)</div> |
 | Approve and Delete | When You add a comment, Your comment will be sent to this website which the owner can approve it or delete it | <div align="center">![image](https://user-images.githubusercontent.com/99729607/208216822-b01db1e0-add5-466d-92b5-a4f334055944.png)</div> |
 | Approved Comment | When your comment was approved, it will be shown in the main website. | <div align="center">![image](https://user-images.githubusercontent.com/99729607/208217064-aa73da36-2c6e-4fda-a6f2-d526f80af99d.png)</div> |
+
+
+| Icons | Links |
+| :---: | :----: |
+| <img width="30px" src="https://cdn-icons-png.flaticon.com/512/3308/3308395.png" /> | [https://pie-tracker.netlify.app/](https://pie-tracker.netlify.app/)|
+| <img width="30px" src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" /> | [Figma File](https://www.figma.com/file/J2lJrOoDrITpKEQBZS7tXk/Pie-Tracker?node-id=20%3A4&t=YQ5ja9REIBKmYCrM-1)|
+
+<a href="https://www.flaticon.com/free-icons/figma" title="figma icons">Figma icons created by Freepik - Flaticon</a>
